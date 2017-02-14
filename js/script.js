@@ -49,10 +49,15 @@ var products = [
   }
 ]
 
-for (var i=0; i < products.length; i++) {
-  var details = products[i];
-  
-  console.log(details.name);
-  console.log(details.price);
-  console.log(details.description);
+//for (var i=0; i < products.length; i++) {
+//  var details = products[i];
+//  
+//  console.log(details.name);
+//  console.log(details.price);
+//  console.log(details.description);
+//}
+
+function capture(){
+  event.preventDefault();
+  console.log(document.getElementById("selection").value);
 }

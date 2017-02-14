@@ -4,41 +4,39 @@
   <title>Winter Scarves</title>
 
   <meta charset="utf-8">
-
   <link rel="stylesheet" href="styles/reset.css">
   <link rel="stylesheet" href="styles/main.css">
-
   <!-- replace with your personal Font Awesome CDN link -->
   <script src="https://use.fontawesome.com/e3c29d22b8.js"></script>
 </head>
 
 <body>
   <header>
-    <nav>
-      <ul>
-        <li><a href="#">Hats</a></li>
-        <li><a href="#">Gloves</a></li>
-        <li><a href="#">Scarves</a></li>
-        <li class="cart-info">
+    <nav class="flex-container">
+      <ul class="navbar">
+        <li class="navbar-item"><a href="#">Hats</a></li>
+        <li class="navbar-item"><a href="#">Gloves</a></li>
+        <li class="navbar-item"><a href="#">Scarves</a></li>
+        <li class="navbar-item cart-info">
           <i class="fa fa-shopping-cart" aria-hidden="true"></i>
         </li>
       </ul>
     </nav>
-
-    <h1>Winter Wear Warehouse</h1>
+    <img id="logo" src="images/logo-scarfcat.png">
+    <h1 span_1_of_4 id="site-name">Winter Wear Warehouse</h1>
   </header>
 
   <aside>
-    <form>
-      <label>Filter By:
-        <select name="filter">
+    <form name="filter-form" onsubmit="capture();">
+      <label id="filter-label">Filter By:<p></p>
+        <select class="dropdown" id="selection" name="filter">
           <option value="">Choose One</option>
-          <option value="price">Price</option>
-          <option value="name">Name</option>
+          <option name="price" value="price">Price</option>
+          <option name="name" value="name">Name</option>
         </select>
       </label>
 
-      <input type="submit" value="Sort">
+      <input class="submit-button" type="submit" value="Sort">
     </form>
   </aside>
 
@@ -46,7 +44,7 @@
     <h2>Scarves</h2>
 
     <div class="item-container">
-      <div class="item">
+      <div>
         <h3>Wool Cable Knit</h3>
           <img alt="wool cable knit scarf" src= "images/wool-cable.jpeg">
           <p>Warm yourself with this women's natural cable knit scarf, crafted from 100% Merino wool. Imported. $49.99</p>

@@ -1,0 +1,76 @@
+body {
+  font-family: sans-serif;
+}
+
+.flex-container {
+  background-color: #3d7fcf;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+nav > ul {
+  display: flex;
+  color: white;
+  justify-content: space-around;
+  flex-direction: row;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+#site-name {
+  display: inline;
+  color: #3d7fcf;
+  font-size: 3rem;
+  margin-left: .5rem;
+  width: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-left: 45%;
+}
+
+#logo {
+  max-height: 5rem;
+  margin-left: 1rem;
+}
+
+aside {
+  margin-left: 1rem;
+  margin-top: 4rem;
+}
+
+#filter-label {
+  font-size: 1.1rem;
+}
+
+.submit-button {
+  display:flex;
+  background-color: #3d7fcf;
+  border: none;
+  border-radius: .5rem;
+  color: white;
+  padding: .5rem 4rem;
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+  font-size: .75rem;
+}
+
+.dropdown {
+  width: 9.5rem;
+  border: solid 1px;
+  text-align: left;
+  margin-top: .5rem;
+  font-size: .75rem;
+  color: #3d7fcf; 
+}
+
+.item-container {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+}
+
