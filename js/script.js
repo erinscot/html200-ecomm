@@ -57,7 +57,7 @@ var products = [
 //  console.log(details.description);
 //}
 
-function capture(){
+function capture() {
   event.preventDefault();
   console.log(document.getElementById("selection").value);
 }
