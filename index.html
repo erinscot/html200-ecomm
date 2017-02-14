@@ -6,6 +6,7 @@
   <meta charset="utf-8">
   <link rel="stylesheet" href="styles/reset.css">
   <link rel="stylesheet" href="styles/main.css">
+ 
   <!-- replace with your personal Font Awesome CDN link -->
   <script src="https://use.fontawesome.com/e3c29d22b8.js"></script>
 </head>
@@ -22,23 +23,25 @@
         </li>
       </ul>
     </nav>
-    <img id="logo" src="images/logo-scarfcat.png">
-    <h1 span_1_of_4 id="site-name">Winter Wear Warehouse</h1>
+    <img alt="bear wearing scarf" id="logo" src="images/logo-scarfcat.png">
+    <h1 id="site-name">Winter Wear Warehouse</h1>
   </header>
 
+  <div class="container">
   <aside>
     <form name="filter-form" onsubmit="capture();">
-      <label id="filter-label">Filter By:<p></p>
+      <label id="filter-label">Filter By:
         <select class="dropdown" id="selection" name="filter">
           <option value="">Choose One</option>
-          <option name="price" value="price">Price</option>
-          <option name="name" value="name">Name</option>
+          <option id="price" value="price">Price</option>
+          <option id="name" value="name">Name</option>
         </select>
       </label>
 
       <input class="submit-button" type="submit" value="Sort">
     </form>
   </aside>
+  </div>  
 
   <section>
     <h2>Scarves</h2>
