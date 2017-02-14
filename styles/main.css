@@ -81,8 +81,9 @@ aside {
 .item-container {
   display: flex;
   flex-direction: row;
-  padding: 1rem;
+  padding: .5rem;
   margin: 1rem;
   border: solid 1px gray; 
+  width: 33.33333333%
 }
 
