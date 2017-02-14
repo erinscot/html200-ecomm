@@ -20,17 +20,14 @@ nav > ul {
   margin-bottom: 1rem;
 }
 
-
 #site-name {
-  display: inline;
+  display: flex;
+  flex-wrap: wrap;
+  width: 19rem;
   color: #3d7fcf;
   font-size: 3rem;
-  margin-left: .5rem;
-}
-
-h2 {
-  font-size: 1.5rem;
-  margin-left: 45%;
+  margin-left: 5rem;
+  margin-top: 2.5rem;
 }
 
 #logo-pic {
@@ -39,11 +36,9 @@ h2 {
   margin-left: 1rem;
 }
 
-#site-name {
-  display: flex;
-  margin-left: 5rem;
-  width: 20rem;
-  flex-wrap: wrap;
+h2 {
+  font-size: 1.5rem;
+  margin-left: 45%;
 }
 
 aside {
