@@ -44,6 +44,7 @@ h2 {
 aside {
   margin-left: 1rem;
   margin-top: 4rem;
+  width: 20%
 }
 
 #filter-label {
@@ -73,11 +74,15 @@ aside {
   color: #3d7fcf; 
 }
 
+
 .item-container {
   display: flex;
   flex-direction: row;
   padding: .5rem;
-  margin: 1rem;
-  width: 33.33333333%
+  margin-top: 1rem;
+  margin-left: 11rem;
+  width: 75%;
 }
+
+
 
