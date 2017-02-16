@@ -20,31 +20,31 @@ nav > ul {
   margin-bottom: 1rem;
 }
 
-#site-name {
-  display: flex;
-  flex-wrap: wrap;
-  width: 19rem;
-  color: #3d7fcf;
-  font-size: 3rem;
-  margin-left: 5rem;
-  margin-top: 2.5rem;
-}
-
 #logo-pic {
-  float: left;
   max-height: 7rem;
   margin-left: 1rem;
 }
 
+.site-logo {
+  display: flex;
+  flex-direction: row;
+  width: 24rem;
+  color: #3d7fcf;
+  font-size: 3rem;
+}
+
+#site-name {
+  margin: 1.5rem .5rem;
+}
+
 h2 {
   font-size: 1.5rem;
-  margin-left: 45%;
+  margin-left: 35%;
+  margin-bottom: 2rem;
 }
 
 aside {
-  margin-left: 1rem;
-  margin-top: 4rem;
-  width: 20%
+  margin: 4rem 1rem 1rem 1rem; 
 }
 
 #filter-label {
@@ -81,8 +81,8 @@ aside {
 }
 
 section {
-  float:right;
-  margin: 1rem 1rem 1rem 11rem;
+  float: right;
+  margin: 1rem;
   width: 80%;
 }
 
