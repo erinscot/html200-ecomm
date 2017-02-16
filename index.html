@@ -9,6 +9,7 @@
  
   <!-- replace with your personal Font Awesome CDN link -->
   <script src="https://use.fontawesome.com/e3c29d22b8.js"></script>
+  <script type = "text/javascript" src="script.js"></script>
 </head>
 
 <body>
@@ -20,6 +21,13 @@
         <li class="navbar-item"><a href="#">Scarves</a></li>
         <li class="navbar-item cart-info">
           <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+          <div class="dropdown">
+            <button onclick="showCart" class="cart-items"></button>
+            <div id="cart-content" class="dropdown-content">
+              <a href="#">items go here</a>
+              <a href="#">and here</a>
+            </div>
+          </div>  
         </li>
       </ul>
     </nav>
