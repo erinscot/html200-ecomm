@@ -22,10 +22,8 @@ nav > ul {
 
 /* Dropdown Button */
 .cart-items {
-    background-color: #4CAF50;
+    background-color: #3d7fcf;
     color: white;
-    padding: 16px;
-    font-size: 16px;
     border: none;
     cursor: pointer;
 }
