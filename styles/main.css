@@ -2,6 +2,10 @@ body {
   font-family: sans-serif;
 }
 
+img {
+  max-width: 100%;
+}
+
 .flex-container {
   background-color: #3d7fcf;
 }
@@ -83,11 +87,13 @@ nav > ul {
 h2 {
   font-size: 1.5rem;
   margin-left: 35%;
-  margin-bottom: 2rem;
+  margin-bottom: .1rem;
 }
 
 aside {
   margin: 4rem 1rem 1rem 1rem; 
+  width: 13%;
+  float: left;
 }
 
 #filter-label {
@@ -117,15 +123,44 @@ aside {
   color: #3d7fcf; 
 }
 
+/*
+h2 {
+  text-align: left;
+}
+*/
+
+/*
+section {
+  width: 85%;
+}
+*/
+
 .item-container {
   display: flex;
-  flex-direction: row;
-  padding: .5rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-right: 1rem;
+  width: 85%;
 }
 
-section {
-  float: right;
+.item {
+  display: flex;
+  flex-wrap: wrap;
+  border: solid gray 2px;
+  padding: 1rem;
   margin: 1rem;
-  width: 80%;
+  width: 16.66666%;
 }
 
+div h3 {
+  text-align: center;  
+}
+
+.item-photo {
+  margin-top: 2rem;
+}
+
+.item-description {
+  text-align: left;
+  margin-top: .5rem;
+}

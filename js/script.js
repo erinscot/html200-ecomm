@@ -32,7 +32,7 @@ var products = [
   {
     "name": "Multi Color",
     "price": 22.99,
-    "description": "The Who What Wear Oversize Color-Block Square Scarf is big, bold, and designed to twist and wrap any way you wish. All the colors of the season are harmonized in this oversize accent, so you can adjust to contrast or match your outfit; soft and lush, it’s your stylish standoff against cold AC and unexpected fall breezes. 100% acrylic",
+    "description": "The Who What Wear Oversize Color-Block Square Scarf is big, bold, and designed to twist and wrap any way you wish. All the colors of the season are harmonized in this oversize accent, so you can adjust to contrast or match your outfit; soft and lush, it’s your stylish standoff against cold AC and unexpected fall breezes. 100% acrylic.",
     "imageTitle": "multi-color.jpeg"
   },
   {
@@ -44,7 +44,7 @@ var products = [
   {
     "name": "Ashby Twill",
     "price": 70.99,
-    "description": "Faribault brings you the Ashby Twill Scarf in Natural. Woven with a 'broken' twill technique, the Ashby Twill Scarf has a slight zigzag texture. Made in USA, this timeless scarf is crafted with luxurious merino wool and finished with heather gray fringe. 100% Merino wool",
+    "description": "Faribault brings you the Ashby Twill Scarf in Natural. Woven with a 'broken' twill technique, the Ashby Twill Scarf has a slight zigzag texture. Made in USA, this timeless scarf is crafted with luxurious merino wool and finished with heather gray fringe. 100% Merino wool.",
     "imageTitle": "twill.jpg"
   }
 ]
@@ -81,4 +81,18 @@ window.onclick = function(event) {
       }
     }
   }
+}
+//to do: trigger on change of cart contents
+function sumPrices(cartArray) {
+  // for loop through array; sum value of price attribute for each object
+  var total = 0;
+  
+  for(var i=0; i<cartArray.length; i++) {
+    if(cartArray[i].price) {
+      total = total + cartArray[i].price;
+    }
+  }
+  
+  //to do: print total as HTML to page, next to cart icon
+  console.log(total);
 }
