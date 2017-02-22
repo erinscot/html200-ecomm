@@ -123,29 +123,22 @@ aside {
   color: #3d7fcf; 
 }
 
-/*
-h2 {
-  text-align: left;
-}
-*/
-
 .item-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-right: 2rem;
-  position: relative;
+  max-width: 85%;
 }
 
 .item {
-  border: solid gray 2px;
+  border: solid #c5c6c9 2px;
   padding: 1rem;
   margin: 1rem;
   max-width: 16.66666%;
 }
 
-div h3 {
-  text-align: center;  
+h3 {
+  text-align: center;
 }
 
 .item-photo {
@@ -153,6 +146,7 @@ div h3 {
 }
 
 .item-description {
-  text-align: left;
+  text-align: center;
   margin-top: .5rem;
 }
+
