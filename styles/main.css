@@ -86,7 +86,7 @@ nav > ul {
 
 h2 {
   font-size: 1.5rem;
-  margin-left: 35%;
+  margin-left: 53.5%;
   margin-bottom: .1rem;
 }
 
@@ -129,27 +129,19 @@ h2 {
 }
 */
 
-/*
-section {
-  width: 85%;
-}
-*/
-
 .item-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  margin-right: 1rem;
-  width: 85%;
+  justify-content: center;
+  margin-right: 2rem;
+  position: relative;
 }
 
 .item {
-  display: flex;
-  flex-wrap: wrap;
   border: solid gray 2px;
   padding: 1rem;
   margin: 1rem;
-  width: 16.66666%;
+  max-width: 16.66666%;
 }
 
 div h3 {
