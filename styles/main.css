@@ -170,8 +170,9 @@ h3 {
     width: 100%;
   }  
   
-  .site-logo {
+  .site-name {
     width: 60%;
+    margin: .5rem;
   }
  }
 
