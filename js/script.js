@@ -32,7 +32,7 @@ var products = [
   {
     "name": "Multi Color",
     "price": 22.99,
-    "description": "The Who What Wear Oversize Color-Block Square Scarf is big, bold, and designed to twist and wrap any way you wish. All the colors of the season are harmonized in this oversize accent, so you can adjust to contrast or match your outfit; soft and lush, it’s your stylish standoff against cold AC and unexpected fall breezes. 100% acrylic.",
+    "description": "The Who-What-Wear Oversize Color-Block Square Scarf is big, bold, and designed to twist and wrap any way you wish. All the colors of the season are harmonized in this oversize accent, so you can adjust to contrast or match your outfit; soft and lush, it’s your stylish standoff against cold AC and unexpected fall breezes. 100% acrylic.",
     "imageTitle": "multi-color.jpeg"
   },
   {
@@ -62,7 +62,7 @@ function capture() {
   console.log(document.getElementById("selection").value);
 }
 
-/* When the user clicks on the button, 
+/* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
 function showCart() {
     document.getElementById("cart-content").classList.toggle("show");
@@ -70,7 +70,7 @@ function showCart() {
 
 // Close the dropdown menu if the user clicks outside of it
 window.onclick = function(event) {
-  if (!event.target.matches('.cart-items')) {
+  if (!event.target.matches(".cart-items")) {
 
     var dropdowns = document.getElementsByClassName("dropdown-content");
     var i;
