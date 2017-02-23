@@ -170,3 +170,9 @@ h3 {
     width: 100%;
   }  
  }
+
+@media screen and (min-width: 1400px) {
+  .item {
+    width: 22%;
+  }  
+ }
