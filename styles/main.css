@@ -174,11 +174,9 @@ h3 {
     max-width: 100%;
   }
   
-/*
-  .site-name {
+  #site-name {
      font-size: 2.5rem;
-  }
-*/
+}
   
 /*
   #logo-pic {
