@@ -169,6 +169,10 @@ h3 {
   .item {
     width: 100%;
   }  
+  
+  .site-logo {
+    max-width: 90%;
+  }
  }
 
 @media screen and (min-width: 1400px) {
