@@ -54,7 +54,8 @@ nav > ul {
 
 /* Links inside the dropdown */
 .dropdown-content a {
-    color: black;
+    color: #3d7fcf;
+    font-family: 'Droid Sans', sans-serif;
     padding: 12px 16px;
     text-decoration: none;
     font-size: .75rem;
