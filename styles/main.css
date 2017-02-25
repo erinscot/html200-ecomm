@@ -19,6 +19,7 @@ nav > ul {
   flex-direction: row;
   padding: 1rem;
   margin-bottom: 1rem;
+  font-size: 1.1rem;
 }
 
 /* Dropdown Button */
