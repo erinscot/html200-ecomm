@@ -1,6 +1,8 @@
+/*
 body {
   font-family: sans-serif;
 }
+*/
 
 img {
   max-width: 100%;
@@ -13,6 +15,7 @@ img {
 a {
   color: white;
   text-decoration: none;
+  font-family: 'Droid Sans', sans-serif;
 }
 
 nav > ul {
@@ -51,6 +54,7 @@ nav > ul {
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+    margin-right: 10rem;
 }
 
 /* Links inside the dropdown */
@@ -67,26 +71,35 @@ nav > ul {
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {display:block;}
 
+
+#site-name {
+  margin: 2.5rem 1.5rem 2.5rem 1.5rem;
+  font-size: 6rem;
+  font-family: 'Amatic SC', sans-serif;
+  text-align: center;
+  color: #3d7fcf;
+}
+
 #logo-pic {
   max-height: 7rem;
   margin-left: 1rem;
+  float: right;
+  margin-right: 3rem;
 }
 
+
+/*
 .site-logo {
   display: flex;
   flex-direction: row;
   width: 24rem;
   color: #3d7fcf;
 }
-
-#site-name {
-  margin: 1.5rem .5rem;
-  font-size: 3rem;
-}
+*/
 
 aside {
   margin: 4rem 1rem 1rem 1rem; 
-  float: left;
+ 
 }
 
 #filter-label {
@@ -94,6 +107,7 @@ aside {
   display: flex;
   flex-direction: column;
   font-size: 1.1rem;
+  font-family: 'Droid Sans', sans-serif;
 }
 
 .submit-button {
@@ -105,6 +119,7 @@ aside {
   padding: .5rem 4rem;
   margin-top: .5rem;
   font-size: .75rem;
+  font-family: 'Droid Sans', sans-serif;
 }
 
 .dropdown {
@@ -114,14 +129,17 @@ aside {
   margin-top: .5rem;
   font-size: .75rem;
   color: #3d7fcf; 
+  font-family: 'Droid Sans', sans-serif;
 }
 
 .item-header {
   display: block;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   margin-bottom: 1rem;
+  margin-top: 2rem;
   margin-left: auto;
   margin-right: auto;
+  font-family: 'Droid Sans', sans-serif;
 }
 
 section {
@@ -134,6 +152,8 @@ section {
 
 h3 {
   text-align: center;
+  font-size: 1.25rem;
+  font-family: 'Droid Sans', sans-serif;
 }
 
 .item-container {
@@ -160,6 +180,7 @@ h3 {
 .item-description {
   text-align: center;
   margin-top: .5rem;
+  font-family: 'Droid Sans', sans-serif;
 }
  
 @media screen and (max-width: 744px) {
@@ -175,7 +196,7 @@ h3 {
   }
   
   #site-name {
-     font-size: 2.5rem;
+     font-size: 4rem;
 }
   
 /*
