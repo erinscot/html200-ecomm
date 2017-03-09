@@ -138,7 +138,7 @@ function comparePrice(a, b) {
   products.sort(function(a,b) {
     return a.price - b.price;
 });
-  console.log(products.sort(comparePrice))
+  console.log(products.sort())
 }
   
   //call.sort on your products array and pass it your own comparison function
