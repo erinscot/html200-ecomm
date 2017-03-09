@@ -58,10 +58,18 @@ for (var i=0; i < products.length; i++) {
 }
 
 function capture() {
-  event.preventDefault();
-  console.log(document.getElementById("selection").value);
+    // stop form submission
+    event.preventDefault();
+    // set the select tag as a variable and check its value
+    var sel = document.getElementById("selection");
+    if (sel.value == "price") {
+        // sort by price
+        comparePrice();
+    } else if (sel.value == "name") {
+        // sort by name
+        compareNames();
+    }
 }
-
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
 function showCart() {
