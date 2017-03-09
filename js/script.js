@@ -97,7 +97,7 @@ function sumPrices(cartArray) {
   console.log(total);
 }
 
-var cart = [{"name": "Reversible Plaid"}, {"name": "Wool Cable Knit"}, {"name": "Northern Lights"}, {"name": "Ombre Infinity"}, {"name": "Fringed Plaid"}, {"name": "Multi Color"}, {"name": "Etro Paisley-Print Silk"}, {"name": "Ashby Twill"}];
+var cart = [];
 
 function cartHandler(item){
  
@@ -115,3 +115,22 @@ function cartHandler(item){
   console.log(cart.length);
 }
 
+//sort by name
+function compareNames() {
+  products.sort(function(a,b){
+    var nameA = a.name.toUpperCase();
+    var nameB = b.name.toUpperCase();
+    
+    if (nameA < nameB) {
+      return -1;
+  }
+    if (nameA > nameB) {
+    return 1;
+  }
+  return 0;
+})
+  console.log(compareNames);
+             
+  
+  //call.sort on your products array and pass it your own comparison function
+  
