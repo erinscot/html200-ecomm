@@ -42,7 +42,7 @@
   </header>
 
   <aside>
-    <form name="filter-form" onsubmit="capture();">
+    <form name="filter-form" onsubmit="capture(); compareNames(); comparePrice()">
       <label id="filter-label">Filter By:
         <select class="dropdown" id="selection" name="filter">
           <option value="">Choose One</option>

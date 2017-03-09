@@ -97,6 +97,7 @@ function sumPrices(cartArray) {
   console.log(total);
 }
 
+  
 var cart = [];
 
 function cartHandler(item){
@@ -115,8 +116,9 @@ function cartHandler(item){
   console.log(cart.length);
 }
 
-//sort by name
-function compareNames() {
+
+
+function compareNames(a, b) {
   products.sort(function(a,b){
     var nameA = a.name.toUpperCase();
     var nameB = b.name.toUpperCase();
@@ -128,9 +130,16 @@ function compareNames() {
     return 1;
   }
   return 0;
-})
-  console.log(compareNames);
-             
+})  
+  console.log(products.sort())
+}
+
+function comparePrice(a, b) {
+  products.sort(function(a,b) {
+    return a.price - b.price;
+});
+  console.log(products.sort(comparePrice))
+}
   
   //call.sort on your products array and pass it your own comparison function
   
