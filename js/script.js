@@ -49,13 +49,13 @@ var products = [
   }
 ]
 
-//for (var i=0; i < products.length; i++) {
-//  var details = products[i];
-//  
-//  console.log(details.name);
-//  console.log(details.price);
-//  console.log(details.description);
-//}
+for (var i=0; i < products.length; i++) {
+  var details = products[i];
+  
+  console.log(details.name);
+  console.log(details.price);
+  console.log(details.description);
+}
 
 function capture() {
   event.preventDefault();
@@ -96,3 +96,22 @@ function sumPrices(cartArray) {
   //to do: print total as HTML to page, next to cart icon
   console.log(total);
 }
+
+var cart = [{"name": "Reversible Plaid"}, {"name": "Wool Cable Knit"}, {"name": "Northern Lights"}, {"name": "Ombre Infinity"}, {"name": "Fringed Plaid"}, {"name": "Multi Color"}, {"name": "Etro Paisley-Print Silk"}, {"name": "Ashby Twill"}];
+
+function cartHandler(item){
+ 
+  var i = cart.findIndex(function(el){
+   return el.name.toLowerCase() == item.toLowerCase()});
+     if (i >= 0) {
+       cart.splice(i,1);
+     }
+     else {
+       var cartItem = {
+         "name": item
+       }
+       cart.push(cartItem);
+     }
+  console.log(cart.length);
+}
+

@@ -4,7 +4,7 @@
   <title>Winter Scarves</title>
 
   <meta charset="utf-8">
-  <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+  <meta name="viewport" content="initial-scale=1.0, width=device-width">
   <link rel="stylesheet" href="styles/reset.css">
   <link rel="stylesheet" href="styles/main.css">
   <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Droid+Sans|Pangolin" rel="stylesheet">
@@ -63,13 +63,23 @@
                sizes="(max-width: 800px) 150px, (max-width: 1400px) 200px, (min-width: 1401px) 300px"
                 alt="reversible plaid scarf" src="reversible-plaid.jpeg">
           <p class="item-description">Two classic patterns in one great look: This supersoft and cozy reversible scarf instantly doubles your street-style cred. 100% acrylic. $26.99</p>
-      </div>
+          <form id='quantityform' method='POST' action='#'>
+            <input type='button' value='-' class='qtyminus' field='quantity'>
+            <input type='text' name='quantity' value='0' class='qty'>
+            <input type='button' value='+' class='qtyplus' onclick="cartHandler('Reversible Plaid')" field='quantity'>
+          </form>
+        </div>
       <div class="item">
         <h3>Wool Cable Knit</h3>
           <img class="item-photo" srcset="images/wool-cable.jpeg 300w, images/wool-cable200.jpeg 200w, images/wool-cable150.jpeg 150w" 
                sizes="(max-width: 800px) 150px, (max-width: 1400px) 300px, (min-width: 1401px) 300px"
                 alt="wool cable knit scarf" src="images/wool-cable.jpeg">
           <p class="item-description">Warm yourself with this natural cable knit scarf, crafted from 100% Merino wool. Imported. $49.99</p>
+        <form id='quantityform' method='POST' action='#'>
+            <input type='button' value='-' class='qtyminus' field='quantity'>
+            <input type='text' name='quantity' value='0' class='qty'>
+            <input type='button' value='+' class='qtyplus' onclick="cartHandler('Wool Cable Knit')" field='quantity'>
+          </form>
       </div>
       <div class="item">
         <h3>Northern Lights</h3>
@@ -77,6 +87,11 @@
                sizes="(max-width: 800px) 150px, (max-width: 1400px) 200px, (min-width: 1401px) 300px"
                 alt="northern lights scarf" src="images/northern-lights300.jpg">
           <p class="item-description">Handmade by women in Agra, sales provide medical and educational support in this remote area of India. Crinkly 100% cotton. $29.99</p>
+        <form id='quantityform' method='POST' action='#'>
+            <input type='button' value='-' class='qtyminus' field='quantity'>
+            <input type='text' name='quantity' value='0' class='qty'>
+            <input type='button' value='+' class='qtyplus' onclick="cartHandler('Northern Lights')" field='quantity'>
+          </form>
       </div>
       <div class="item">
         <h3>Ombre Infinity</h3>
@@ -84,6 +99,11 @@
                sizes="(max-width: 800px) 150px, (max-width: 1400px) 200px, (min-width: 1401px) 300px"
                 alt="ombre infinity scarf" src="images/ombre-infinity300.jpg">
           <p class="item-description">A dip-dye effect adds color and dimension to a cozy infinity scarf featuring a soft, chunky knit. 100% acrylic. $11.99</p>
+        <form id='quantityform' method='POST' action='#'>
+            <input type='button' value='-' class='qtyminus' field='quantity'>
+            <input type='text' name='quantity' value='0' class='qty'>
+            <input type='button' value='+' class='qtyplus' onclick="cartHandler('Ombre Infinity')" field='quantity'>
+          </form>
       </div>
       <div class="item">
         <h3>Fringed Plaid</h3>
@@ -91,6 +111,11 @@
                sizes="(max-width: 800px) 150px, (max-width: 1400px) 200px, (min-width: 1401px) 300px"
                 alt="multi-color scarf" src="images/multi-color300.jpeg">
           <p class="item-description">Generously sized, extra soft and featuring a dazzling fringe, this scarf is rendered in a versatile gray, black and white plaid. Expertly beat the cold with style. 100% acrylic. $18.99</p>
+        <form id='quantityform' method='POST' action='#'>
+            <input type='button' value='-' class='qtyminus' field='quantity'>
+            <input type='text' name='quantity' value='0' class='qty'>
+            <input type='button' value='+' class='qtyplus' onclick="cartHandler('Fringed Plaid')" field='quantity'>
+          </form>
       </div>
       <div class="item">
         <h3>Multi Color</h3>
@@ -98,6 +123,11 @@
                sizes="(max-width: 800px) 150px, (max-width: 1400px) 200px, (min-width: 1401px) 300px"
                 alt="multi-color scarf" src="images/multi-color300.jpeg">
           <p class="item-description">The Who-What-Wear Oversize Color-Block Square Scarf is big, bold, and designed to twist and wrap any way you wish. All the colors of the season are harmonized in this oversize accent, so you can adjust to contrast or match your outfit; soft and lush, it’s your stylish standoff against cold AC and unexpected fall breezes. 100% acrylic. $22.99</p>
+        <form id='quantityform' method='POST' action='#'>
+            <input type='button' value='-' class='qtyminus' field='quantity'>
+            <input type='text' name='quantity' value='0' class='qty'>
+            <input type='button' value='+' class='qtyplus' onclick="cartHandler('Multi Color')" field='quantity'>
+          </form>
       </div>
       <div class="item">
         <h3>Etro Paisley-Print Silk</h3>
@@ -105,6 +135,11 @@
                sizes="(max-width: 800px) 150px, (max-width: 1400px) 200px, (min-width: 1401px) 300px"
                 alt="wool cable knit scarf" src="images/etro300.jpg">
           <p class="item-description">Luxurious silk scarf with subtle paisley pattern. 100% silk. $249.99</p>
+        <form id='quantityform' method='POST' action='#'>
+            <input type='button' value='-' class='qtyminus' field='quantity'>
+            <input type='text' name='quantity' value='0' class='qty'>
+            <input type='button' value='+' class='qtyplus' onclick="cartHandler('Etro Paisley-Print Silk')" field='quantity'>
+          </form>
       </div>
       <div class="item">
         <h3>Ashby Twill</h3>
@@ -112,10 +147,13 @@
                sizes="(max-width: 800px) 150px, (max-width: 1400px) 200px, (min-width: 1401px) 300px"
                 alt="wool cable knit scarf" src="images/twill300.jpg">
           <p class="item-description">Faribault brings you the Ashby Twill Scarf in Natural. Woven with a 'broken' twill technique, the Ashby Twill Scarf has a slight zigzag texture. Made in USA, this timeless scarf is crafted with luxurious merino wool and finished with heather gray fringe. 100% Merino wool. $70.99</p>
+        <form id='quantityform'>
+            <input type='button' value='-' class='qtyminus'  field='quantity'>
+            <input type='text' name='quantity' value='0' class='qty'>
+            <input type='button' value='+' class='qtyplus' onclick="cartHandler('Ashby Twill')" field='quantity'>
+          </form>
       </div>
     </div>
   </section>
-
-  <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>

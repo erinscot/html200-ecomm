@@ -194,6 +194,31 @@ h3 {
   color: #3d7fcf;
 }
  
+#quantityform {
+    text-align: center;
+    padding: 5px;
+    margin: 2%;
+}
+.qty {
+    width: 40px;
+    height: 25px;
+    text-align: center;
+    border-radius: .25rem;
+    border-color: #3d7fcf;
+}
+
+input.qtyplus { 
+  width:25px; 
+  height:25px;
+  color: #3d7fcf;
+}
+
+input.qtyminus { 
+  width:25px; 
+  height:25px;
+  color: #3d7fcf;
+}
+
 @media screen and (max-width: 744px) {
   section {
     width: 97%;}
