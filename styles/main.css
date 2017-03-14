@@ -20,6 +20,14 @@ nav > ul {
   padding: 1rem;
   margin-bottom: 1rem;
   font-size: 1.1rem;
+  font-family: 'Droid Sans', sans-serif;
+}
+
+#item-count  {
+  display: flex;
+  justify-content: flex-end; 
+  font-family: 'Droid Sans', sans-serif;
+  margin-right: 1rem;
 }
 
 /* Dropdown Button */
@@ -194,7 +202,7 @@ h3 {
   color: #3d7fcf;
 }
  
-#quantityform {
+.quantityform {
     text-align: center;
     padding: 5px;
     margin: 2%;

@@ -121,7 +121,8 @@ function cartHandler(item){
        }
        cart.push(cartItem);
      }
-  console.log(cart.length);
+  document.getElementById("item-count").innerText = "Item Count" + ":" + " " +  cart.length;
+ document.getElementById("item-count").style.color="white";
 }
 
 
@@ -149,5 +150,4 @@ function comparePrice(a, b) {
   console.log(products.sort())
 }
   
-  //call.sort on your products array and pass it your own comparison function
   
